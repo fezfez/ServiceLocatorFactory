@@ -1,0 +1,25 @@
+{
+    "name": "fezfez/service-locator-factory",
+    "type": "library",
+    "description": "Get the service locator in zf2",
+    "keywords": ["serviceLocator","factory", "ZF2"],
+    "homepage": "https://github.com/fezfez/ServiceLocatorFactory",
+    "license": "MIT",
+    "version": "0.1beta",
+    "authors": [
+        {
+            "name": "Demonchaux Stéphane",
+            "email": "demonchaux.stephane@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "zendframework/zendframework": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "ServiceLocatorFactory": "src/"
+        }
+    }
+}
