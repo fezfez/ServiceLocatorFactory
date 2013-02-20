@@ -2,20 +2,17 @@
 namespace ServiceLocatorFactory;
 
 use Zend\Loader\AutoloaderFactory;
+use Zend\Loader\StandardAutoloader;
 use Zend\Mvc\MvcEvent;
 
-class Module implements
-    AutoloaderProviderInterface,
-    ConfigProviderInterface,
-    ServiceProviderInterface,
-    InitProviderInterface
+class Module
 {
     /**
      * {@inheritDoc}
      */
     public function onBootstrap(MvcEvent $e)
     {
-        ServiceLocator::setInstance($e->getApplication()->getServiceManager());
+        ServiceLocatorFactory::setInstance($e->getApplication()->getServiceManager());
     }
 
     /**
