@@ -11,7 +11,12 @@ class ServiceLocatorFactory
      * @var ServiceManager
      */
     private static $serviceManager = null;
-
+    
+    /**
+     * Disable constructor
+     */
+    private function __construct() { }
+    
     /**
      * @throw ServiceLocatorFactory\NullServiceLocatorException
      * @return Zend\ServiceManager\ServiceManager
